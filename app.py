@@ -54,7 +54,7 @@ def main():
 
     if st.button("Predict Price in Lakhs"):
         result=predict_price(regressor, bath, balcony, total_sqft_int, bhk, price_per_sqft)
-    st.success('The  Price  is  {}  Rupees'.format(result*100000))
+    st.success('The  Price  is  {}  Rupees'.format(round(result, 2)*100000))
 
 
 if __name__=='__main__':
