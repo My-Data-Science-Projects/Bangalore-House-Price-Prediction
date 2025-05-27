@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestRegressor
 pickle_in = open('rfr.pkl','rb')
 regressor = pickle.load(pickle_in)
 
-df = pd.read_csv('clean_data.csv')
+df = pd.read_csv('dataset/clean_data.csv')
 
 X = df.drop('price', axis=1)
 y = df['price']
